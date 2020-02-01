@@ -29,8 +29,6 @@ We see from the results above that features like positive vertical edges, negati
 
 We used different deep learning frameworks to build and train the neural networks. Notably, we used TensorFlow and FastAI, which was really easy to use for transfer learning.
 
-Transfer learning is a methodology where we use pretrained models (on a different data) and adapt them to our data. This saves the computational effort of building the models from the scratch. Transfer learning is the best way to combat limitations of small data.
-
 ## Image transformations
 
 Another technique than can be used to cope with the limitation of data availability is creating innovative image transformations. The well accepted transformations include flipping the image, skewing them, rotating them, increasing and decreasing the brightness, warping them. These kinds of transformations help us create multiple images out of single image, thus enriching our dataset.
@@ -39,4 +37,22 @@ We also use transformations like contours and convex hulls and tested the neural
 
 <img src="T2.png?raw=true"/>
 
+## Transfer Learning
 
+Transfer learning is a methodology where we use pretrained models (on a different data) and adapt them to our data. This saves the computational effort of building the models from the scratch. Transfer learning is the best way to combat limitations of small data.
+
+<img src="T3.png?raw=true"/>
+
+# Business Value of Labeling More Images
+
+As we already discussed that we have limited number of images. The reason for this is labeling images requires a lot of expertise and a lot of dedicated efforts. It only makes sense to spend resources on labeling images if we are able to derive value out of it.
+
+Here we can see that the accuracy of classification increases with increase in the number of images used for training. This shows that labeling more images indeed provides business value as it improves our research efforts significantly. The prediction accuracy increases from 70% with 100 images to 88% with 351 images.
+
+<img src="G1.png?raw=true"/>
+
+# Evaluation
+
+To ensure our models gave unbiased predictions, we used cross-validation technique which gives us a pessimistic bias which is good from business perspective. We also used different evaluation metrics like accuracy, precision, recall, F1 score, etc. to minimize business losses from misclassification.
+
+Thus, finally we were able to achieve about 90% accuracy with a challenging dataset. The models were statistically valid and unbiased and thus were totally robust and scalable to new data. 
